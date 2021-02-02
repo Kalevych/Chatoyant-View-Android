@@ -10,7 +10,7 @@
 #### Surface, buttons, text types of views available  
 #### Highlight your views with slight shining while users rotating their phones.
 
-<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/angle.gif" width="800" />
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/readme/angle.gif" width="800" />
 
 * [How to use](#how-to-use)
     * [add - Jcenter](#jcenter)
@@ -125,8 +125,8 @@ all the parameter also could be set up programmatically.
 
 ## Demo
 
-<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/bitmap.gif"  width="800" />
-<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/mode.gif"  width="800" />
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/readme/bitmap.gif"  width="800" />
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/readme/mode.gif"  width="800" />
 
 ## Components
 
@@ -164,7 +164,7 @@ all the parameter also could be set up programmatically.
                 app:tile_mode="MIRROR" />
 ```
 
-<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/button.gif"  width="400" />
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/readme/button.gif"  width="400" />
 
 ## Chatoyant Surface
 
@@ -194,5 +194,5 @@ chatoyantSurfaceExample.clipFromViews(binding.cardInsideCahtoyantSurface)
 ## Create your own widget
 TBD
 
-<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/overall.gif"  width="400" />
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/readme/overall.gif"  width="400" />
 
