@@ -1,11 +1,11 @@
 
 # Chatoyant View Android Library
 
-  <h3 align="center">New type of user experience which allow you to highlight your views with slight shining while users rotating their phones.
+  <h3>New type of user experience which allow you to highlight your views with slight shining while users rotating their phones.
   Screens interacts with user through gyroscope. No permissions. No overdraws. No Sensor wasting (disabled during onPause). Super customizable. All types of views available</h3>
 
 
-[![Sample app gif](https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/overall.gif)]
+[![Sample app gif](https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/overall.gif) | width=100]
 
 * [How to use](#how-to-use)
     * [add - Jcenter](#jcenter)
