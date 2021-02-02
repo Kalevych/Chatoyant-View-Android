@@ -37,14 +37,12 @@ If you prefer it, you can use the gradle dependency, you have to add these lines
 ## Jcenter
 
 ```xml
-repositories {
-    jcenter()
-}
 
 dependencies {
-    compile 'com.afkoders.chatoyantview:1.0.2'
+    implementation 'com.afkoders.chatoyantview:1.0.2'
 }
 ```
+OR
 
 ## Jitpack
 
