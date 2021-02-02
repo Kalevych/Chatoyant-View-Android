@@ -132,7 +132,6 @@ all the parameter also could be set up programmatically.
 
 ## Chatoyant Button
 
-![chato button](images/chato_button.png)
 ```xml
  <com.afkoders.chatoyantview.chatoyant_view.ChatoyantButton
                 android:id="@+id/chatoyantButton"
