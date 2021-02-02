@@ -141,7 +141,7 @@ abstract class ChatoyantHelper(private val context: Context) : SensorEventListen
             1f
         )
 
-        tileMode = when (typedArray.getInteger(R.styleable.ChatoyantView_tile_mode, 0)) {
+        tileMode = when (typedArray.getInteger(R.styleable.ChatoyantView_tile_mode, 2)) {
             1 -> Shader.TileMode.REPEAT
             2 -> Shader.TileMode.MIRROR
             else -> Shader.TileMode.CLAMP

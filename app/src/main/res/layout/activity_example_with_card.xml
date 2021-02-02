@@ -239,11 +239,10 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
-                android:backgroundTint="@color/gold"
                 android:gravity="center"
                 android:lineSpacingExtra="8sp"
                 android:text="@string/chatoyant_text"
-                android:textColor="@color/gold"
+                android:textColor="@color/purple_200"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -293,7 +292,7 @@
             app:srcCompat="@drawable/ic_heart" />
 
         <com.afkoders.chatoyantview.chatoyant_view.ChatoyantSurface
-            android:id="@+id/csChatoyantBottomExample"
+            android:id="@+id/chatoyantSurfaceExample"
             android:layout_width="0dp"
             android:layout_height="200dp"
             android:layout_marginStart="16dp"
@@ -309,19 +308,19 @@
             app:layout_constraintVertical_bias="1.0"
             app:shine_angle="0"
             app:shine_width="0.25"
-            app:surface_background_color="@color/gold"
+            app:surface_background_color="@color/purple_200"
             app:tile_mode="MIRROR" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cardInner"
+            android:id="@+id/cardInsideCahtoyantSurface"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="32dp"
             android:background="@drawable/gray_rounded_corners_big_radius"
-            app:layout_constraintBottom_toBottomOf="@+id/csChatoyantBottomExample"
-            app:layout_constraintEnd_toEndOf="@+id/csChatoyantBottomExample"
-            app:layout_constraintStart_toStartOf="@+id/csChatoyantBottomExample"
-            app:layout_constraintTop_toTopOf="@+id/csChatoyantBottomExample">
+            app:layout_constraintBottom_toBottomOf="@+id/chatoyantSurfaceExample"
+            app:layout_constraintEnd_toEndOf="@+id/chatoyantSurfaceExample"
+            app:layout_constraintStart_toStartOf="@+id/chatoyantSurfaceExample"
+            app:layout_constraintTop_toTopOf="@+id/chatoyantSurfaceExample">
 
             <com.afkoders.chatoyantview.chatoyant_view.ChatoyantTextView
                 android:id="@+id/tvTitleInner"
@@ -330,11 +329,10 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:backgroundTint="@color/gold"
                 android:gravity="center"
                 android:lineSpacingExtra="8sp"
                 android:text="@string/chatoyant_text"
-                android:textColor="@color/gold"
+                android:textColor="@color/purple_200"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -349,10 +347,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:gravity="center"
-                android:text="BUY RIGHT NOW"
+                android:text="CHATOYANT BUTTON"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                app:backgroundTint="@color/gold"
+                app:backgroundTint="@color/purple_200"
                 app:cornerRadius="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"

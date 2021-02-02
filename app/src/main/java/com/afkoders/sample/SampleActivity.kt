@@ -23,7 +23,7 @@ class SampleActivity : AppCompatActivity() {
 
         binding.apply {
             listOfAllChatoyantViews = arrayListOf(
-                csChatoyantBottomExample,
+                chatoyantSurfaceExample,
                 tvTitleInner,
                 chatoyantButton,
                 csChatoyant,
@@ -98,6 +98,6 @@ class SampleActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        binding.csChatoyantBottomExample.clipFromViews(binding.cardInner)
+        binding.chatoyantSurfaceExample.clipFromViews(binding.cardInsideCahtoyantSurface)
     }
 }
