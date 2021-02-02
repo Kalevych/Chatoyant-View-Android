@@ -5,7 +5,7 @@
   Screens interacts with user through gyroscope. No permissions. No overdraws. No Sensor wasting (disabled during onPause). Super customizable. All types of views available</h3>
 
 
-[![Sample app gif](https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/overall.gif width=300)
+![Sample app gif](https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/overall.gif width=300)
 
 * [How to use](#how-to-use)
     * [add - Jcenter](#jcenter)
