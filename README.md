@@ -25,7 +25,7 @@ If you want use this library, you only have to download this project or Chatoyan
 
 If you prefer it, you can use the gradle dependency, you have to add these lines in your build.gradle file:
 
-##Jcenter
+## Jcenter
 
 ```xml
 repositories {
@@ -37,7 +37,7 @@ dependencies {
 }
 ```
 
-##Jitpack
+## Jitpack
 
 root build.gradle:
 ```xml
@@ -56,7 +56,7 @@ dependencies section:
 	}
 ```
 
-##Setup
+## Setup
 
 You can simply addd a chatoyant view to your xml file next way:
 
@@ -109,15 +109,15 @@ all the parameter also could be set up programmatically. Few important additions
 - call clipFromViews(innerViewId) for chatoyantSurface if it contains any views inside itself. It will clip these areas from canvas, 
   help you to avoid overdraws and make your app as much optimized as its possible!
 
-##Demo
+## Demo
 
 [![Sample app gif](https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/angle.gif)]
 [![Sample app gif](https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/bitmap.gif)]
 [![Sample app gif](https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/mode.gif)]
 
-##Components
+## Components
 
-###ChatoyantButton
+### ChatoyantButton
 
 
 ![chato button](images/chato_button.png)
@@ -133,7 +133,7 @@ all the parameter also could be set up programmatically. Few important additions
                 app:tile_mode="MIRROR" />
 ```
 
-###ChatoyantTextView
+### ChatoyantTextView
 
 ![chato textView](images/chato_tv.png)
 ```xml
@@ -153,7 +153,7 @@ all the parameter also could be set up programmatically. Few important additions
                 app:tile_mode="MIRROR" />
 ```
 
-###ChatoyantSurface
+### ChatoyantSurface
 
 ![Chato surface](images/chato_surface.png)
 
@@ -176,5 +176,5 @@ all the parameter also could be set up programmatically. Few important additions
             app:tile_mode="MIRROR" />
 ```
 
-##Create your own widget
+## Create your own widget
 TBD
