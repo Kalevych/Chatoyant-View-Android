@@ -1,17 +1,7 @@
 
 # Chatoyant View Android Library
 
-#### Set of Views with dynamical background changing depends on device position in space.
-#### Interact with the user in new way, highlight important design elements with rotation glance.
-
-#### No overdraws, no additional permissions.
-#### No Sensor wasting (disabled during onPause). Super customizable. 
-
-#### Surface, buttons, text types of views available  
-#### Highlight your views with slight shining while users rotating their phones.
-
-<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/readme/angle.gif" width="800" />
-
+* [Intro](#intro)
 * [How to use](#how-to-use)
     * [add - Jcenter](#jcenter)
     * [add - Jitpack](#jitpack)
@@ -22,6 +12,19 @@
     * [ChatoyantTextView](#Chatoyant-TextView)
     * [ChatoyantSurface](#Chatoyant-Surface)
     * [Create your own widget](#create-your-own-widget)
+
+## Intro 
+#### Chatoyant View Android Library its a set of Views with dynamical background changing depends on device position in space.
+
+##### Interact with the user in new way, highlight important design elements with rotation glance.
+
+##### No overdraws, no additional permissions.
+##### No Sensor wasting (disabled during onPause). Super customizable. 
+
+##### Surface, buttons, text types of views available  
+##### Highlight your views with slight shining while users rotating their phones.
+
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/readme/angle.gif" width="800" />
 
 
 ## How to use
