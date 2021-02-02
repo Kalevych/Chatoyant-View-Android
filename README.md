@@ -1,11 +1,16 @@
 
 # Chatoyant View Android Library
 
-  <h3>New type of user experience which allow you to highlight your views with slight shining while users rotating their phones.
-  Screens interacts with user through gyroscope. No permissions. No overdraws. No Sensor wasting (disabled during onPause). Super customizable. All types of views available</h3>
+#### Set of Views with dynamical background changing depends on device position in space.
+#### Interact with the user in new way, highlight important design elements with rotation glance.
 
+#### No overdraws, no additional permissions.
+#### No Sensor wasting (disabled during onPause). Super customizable. 
 
-![Sample app gif](https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/overall.gif width=300)
+#### Surface, buttons, text types of views available  
+#### Highlight your views with slight shining while users rotating their phones.
+
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/angle.gif" width="800" />
 
 * [How to use](#how-to-use)
     * [add - Jcenter](#jcenter)
@@ -13,15 +18,16 @@
     * [Setup](#setup)
     * [Demo](#demo)
 * [Components](#components)
-    * [ChatoyantButton](#ChatoyantButton)
-    * [ChatoyantTextView](#ChatoyantTextView)
-    * [ChatoyantSurface](#ChatoyantSurface)
+    * [ChatoyantButton](#Chatoyant-Button)
+    * [ChatoyantTextView](#Chatoyant-TextView)
+    * [ChatoyantSurface](#Chatoyant-Surface)
     * [Create your own widget](#create-your-own-widget)
 
 
 ## How to use
 
 If you want use this library, you only have to download this project or ChatoyantView module and copypaste files to your project.
+Raw release library you can find in **releases** branch. App with sample you can find in **main** branch
 
 If you prefer it, you can use the gradle dependency, you have to add these lines in your build.gradle file:
 
@@ -52,7 +58,7 @@ root build.gradle:
 dependencies section:
 ```xml
 	dependencies {
-	        implementation 'com.github.Kalevych:Chatoyant-View-Android:Tag'
+	        implementation 'com.github.Kalevych:Chatoyant-View-Android:1.0.2'
 	}
 ```
 
@@ -65,6 +71,7 @@ You can simply addd a chatoyant view to your xml file next way:
             android:id="@+id/csChatoyantBottomExample"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            <!-- optional tags -->
             app:animation_velocity="0.5"
             app:corners_radius="16dp"
             app:is_relative_dimension="true"
@@ -76,49 +83,54 @@ You can simply addd a chatoyant view to your xml file next way:
 ```
 
 
->```xml
->    app:animation_velocity="0.5"
->```
-> will increase speed of shining activity. Default value = 1
->
->```xml
->    app:is_relative_dimension="true"
->```
-> means if coordinates of shader for your view will depend on screen size or it's own (view) size. To make all the views on the screen moving synchroniously keep 
-> this value set up as true
->
->```xml
->    app:shine_angle="0"
->```
-> sets angle of pivot centre for shining line. In degrees (max 360) 
->
->```xml
->    app:shine_width="0.25"
->```
-> from 0 to 1. Represents percent of screen(or view, see is_relative_dimension) will be dallocated as area for shining unit
->
->```xml
->    app:tile_mode="MIRROR"
->```
-> mode for shader spreading. Could be CLAMP, REPEAT, MIRROR
->
+<pre>
+    <b>app:animation_velocity="0.5"</b>
+</pre>
 
-all the parameter also could be set up programmatically. Few important additions:
+will increase or decrease speed of shining. (Default value = 1)
 
-- each ChatoyantView has method ''setBitmapForBackground()'' which could pass your own Bitmap as dynamical background for Shader.
-- call clipFromViews(innerViewId) for chatoyantSurface if it contains any views inside itself. It will clip these areas from canvas, 
-  help you to avoid overdraws and make your app as much optimized as its possible!
+<pre>
+    <b>app:is_relative_dimension="true"</b>
+</pre>
+
+means if coordinates of shader for your view will depend on screen size or it's own (view) size. 
+To make all the views on the screen moving synchroniously keep this value set up as true. (Default value = true)
+
+<pre>
+    <b>app:shine_angle="0"</b>
+</pre>
+sets angle of pivot centre for shining line. In degrees (max 360). (Default value = 0)
+
+<pre>
+    <b>app:shine_width="0.25"</b>
+</pre>
+Represents percent of screen(or view, see is_relative_dimension) will be dallocated as area for shining unit. From 0 to 1. (Default value = 0.5)
+
+<pre>
+    <b>app:tile_mode="MIRROR"</b>
+</pre>
+Mode for shader spreading. Could be CLAMP, REPEAT, MIRROR (Default value = CLAMP, but try MIRROR)
+
+
+all the parameter also could be set up programmatically. 
+
+#### Few important additions:
+
+>
+> <b>Each ChatoyantView has method ''setBitmapForBackground()'' which could allow to pass your own Bitmap as dynamical background for Shader.</b></br>
+> 
+> <b>Call clipFromViews(innerViewId) for chatoyantSurface if it contains any views inside itself. It will clip these areas from canvas, 
+> help you to avoid overdraws and make your app as much optimized as its possible!</b>
+>
 
 ## Demo
 
-[![Sample app gif](https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/angle.gif)]
-[![Sample app gif](https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/bitmap.gif)]
-[![Sample app gif](https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/mode.gif)]
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/bitmap.gif"  width="800" />
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/mode.gif"  width="800" />
 
 ## Components
 
-### ChatoyantButton
-
+## Chatoyant Button
 
 ![chato button](images/chato_button.png)
 ```xml
@@ -133,9 +145,8 @@ all the parameter also could be set up programmatically. Few important additions
                 app:tile_mode="MIRROR" />
 ```
 
-### ChatoyantTextView
+## Chatoyant TextView
 
-![chato textView](images/chato_tv.png)
 ```xml
    <com.afkoders.chatoyantview.chatoyant_view.ChatoyantTextView
                 android:id="@+id/tvTitleInner"
@@ -153,13 +164,9 @@ all the parameter also could be set up programmatically. Few important additions
                 app:tile_mode="MIRROR" />
 ```
 
-### ChatoyantSurface
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/button.gif"  width="400" />
 
-![Chato surface](images/chato_surface.png)
-
->call clipFromViews(innerViewId) for chatoyantSurface if it contains any views inside itself. 
->It will clip these areas from canvas. It'll help you 
->to avoid overdraws and make your app as much optimized as its possible!
+## Chatoyant Surface
 
 ```xml
 <com.afkoders.chatoyantview.chatoyant_view.ChatoyantSurface
@@ -176,5 +183,16 @@ all the parameter also could be set up programmatically. Few important additions
             app:tile_mode="MIRROR" />
 ```
 
+**Tip:
+Call clipFromViews(innerViewId) for chatoyantSurface if it contains any views inside itself. 
+It will clip these areas from canvas. 
+It'll help you to avoid overdraws and make your app as much optimized as its possible!**
+<pre>
+chatoyantSurfaceExample.clipFromViews(binding.cardInsideCahtoyantSurface)
+</pre>
+
 ## Create your own widget
 TBD
+
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/res/readme/overall.gif"  width="400" />
+
