@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChatoyantView">
+    <attr name="corners_radius" format="dimension" />
+    <attr name="surface_background_color" format="color" />
+    <attr name="shine_angle" format="integer" />
+    <attr name="is_relative_dimension" format="boolean" />
+    <attr name="shine_width" format="float" />
+    <attr name="animation_velocity" format="float" />
+    <attr name="tile_mode" format="enum">
+        <enum name="CLAMP" value="0" />
+        <enum name="REPEAT" value="1" />
+        <enum name="MIRROR" value="2" />
+    </attr>
+    <attr name="shine_color" format="color" />
+    </declare-styleable>
+
+  <!--  <declare-styleable name="ChatoyantButton">
+        <attr name="corners_radius" />
+        <attr name="surface_background_color" />
+        <attr name="shine_angle" />
+        <attr name="is_relative_dimension" />
+        <attr name="shine_width" />
+        <attr name="animation_velocity" />
+        <attr name="tile_mode" />
+    </declare-styleable>
+    <declare-styleable name="ChatoyantTextView">
+        <attr name="corners_radius" />
+        <attr name="surface_background_color" />
+        <attr name="shine_angle" />
+        <attr name="is_relative_dimension" />
+        <attr name="shine_width" />
+        <attr name="animation_velocity" />
+        <attr name="tile_mode" />
+    </declare-styleable>
+    <declare-styleable name="ChatoyantSurface">
+        <attr name="corners_radius" />
+        <attr name="surface_background_color" />
+        <attr name="shine_angle" />
+        <attr name="is_relative_dimension" />
+        <attr name="shine_width" />
+        <attr name="animation_velocity" />
+        <attr name="tile_mode" />
+    </declare-styleable>-->
+</resources>

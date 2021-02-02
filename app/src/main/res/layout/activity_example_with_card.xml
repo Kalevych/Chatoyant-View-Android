@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:parentTag="android.widget.FrameLayout">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAngle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Angle"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/seekBarAngle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBarAngle"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:max="360"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAngle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAngleDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="360°"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBarAngle"
+            app:layout_constraintEnd_toEndOf="@+id/seekBarAngle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cbIsRelativeToScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seekBarAngle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvRelative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Synchronyze shining (make its area depends on screen size not view size)"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cbIsRelativeToScreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cbIsRelativeToScreen"
+            app:layout_constraintTop_toTopOf="@+id/cbIsRelativeToScreen" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cbBitmapBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbIsRelativeToScreen" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvBitmapBackground"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Try custom bitmap as background"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cbBitmapBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cbBitmapBackground"
+            app:layout_constraintTop_toTopOf="@+id/cbBitmapBackground" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvShineWidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shine width"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/seekBarShineWidth"
+            app:layout_constraintTop_toBottomOf="@+id/cbBitmapBackground" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBarShineWidth"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:max="100"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvShineWidth" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvWidthDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100%"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBarShineWidth"
+            app:layout_constraintEnd_toEndOf="@+id/seekBarShineWidth"
+            app:layout_constraintTop_toTopOf="@+id/tvShineWidth" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvShineSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="shine speed"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/seekBarShineSpeed"
+            app:layout_constraintTop_toBottomOf="@id/seekBarShineWidth" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBarShineSpeed"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:max="10"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvShineSpeed" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvShineMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="shine mode"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/radioGroupMode"
+            app:layout_constraintTop_toBottomOf="@id/seekBarShineSpeed" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvSppedDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10x"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBarShineSpeed"
+            app:layout_constraintEnd_toEndOf="@+id/seekBarShineSpeed"
+            app:layout_constraintTop_toTopOf="@+id/tvShineSpeed" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvShineMode">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/modeClamp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:text="Clamp" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/modeRepeat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Repeat" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/modeMirror"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Mirror" />
+        </RadioGroup>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardItsel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/gray_rounded_corners_big_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupMode">
+
+
+            <com.afkoders.chatoyantview.chatoyant_view.ChatoyantTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/gold"
+                android:gravity="center"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/chatoyant_text"
+                android:textColor="@color/gold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Test card msg" />
+
+            <com.afkoders.chatoyantview.chatoyant_view.ChatoyantSurface
+                android:id="@+id/csChatoyant"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                app:corners_radius="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:surface_background_color="@color/gold" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.afkoders.chatoyantview.chatoyant_view.ChatoyantSurface
+            android:id="@+id/csChatoyantHeart"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:corners_radius="6dp"
+            app:is_relative_dimension="true"
+            app:layout_constraintBottom_toBottomOf="@+id/cardItsel"
+            app:layout_constraintEnd_toEndOf="@+id/cardItsel"
+            app:layout_constraintStart_toEndOf="@+id/cardItsel"
+            app:layout_constraintTop_toBottomOf="@+id/cardItsel"
+            app:shine_width="0.1"
+            app:surface_background_color="@color/gold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icHeart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/csChatoyantHeart"
+            app:layout_constraintEnd_toEndOf="@id/csChatoyantHeart"
+            app:layout_constraintStart_toStartOf="@id/csChatoyantHeart"
+            app:layout_constraintTop_toTopOf="@id/csChatoyantHeart"
+            app:srcCompat="@drawable/ic_heart" />
+
+        <com.afkoders.chatoyantview.chatoyant_view.ChatoyantSurface
+            android:id="@+id/csChatoyantBottomExample"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="48dp"
+            app:animation_velocity="0.5"
+            app:corners_radius="16dp"
+            app:is_relative_dimension="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/csChatoyantHeart"
+            app:layout_constraintVertical_bias="1.0"
+            app:shine_angle="0"
+            app:shine_width="0.25"
+            app:surface_background_color="@color/gold"
+            app:tile_mode="MIRROR" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardInner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="32dp"
+            android:background="@drawable/gray_rounded_corners_big_radius"
+            app:layout_constraintBottom_toBottomOf="@+id/csChatoyantBottomExample"
+            app:layout_constraintEnd_toEndOf="@+id/csChatoyantBottomExample"
+            app:layout_constraintStart_toStartOf="@+id/csChatoyantBottomExample"
+            app:layout_constraintTop_toTopOf="@+id/csChatoyantBottomExample">
+
+            <com.afkoders.chatoyantview.chatoyant_view.ChatoyantTextView
+                android:id="@+id/tvTitleInner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/gold"
+                android:gravity="center"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/chatoyant_text"
+                android:textColor="@color/gold"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tile_mode="MIRROR"
+                tools:text="Test card msg" />
+
+            <com.afkoders.chatoyantview.chatoyant_view.ChatoyantButton
+                android:id="@+id/chatoyantButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="BUY RIGHT NOW"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:backgroundTint="@color/gold"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.94"
+                app:tile_mode="MIRROR" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
