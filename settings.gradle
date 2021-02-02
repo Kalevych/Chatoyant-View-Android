@@ -1,3 +1,2 @@
 include ':ChatoyantView'
-include ':app'
 rootProject.name = "ChatoyantView"
