@@ -17,6 +17,8 @@
 #### Chatoyant View Android Library its a set of Views with dynamical background changing depends on device position in space.
 
 ##### Interact with the user in new way, highlight important design elements with rotation glance.
+<img src="https://github.com/Kalevych/Chatoyant-View-Android/blob/demo-materials/app/src/main/readme/button.gif"  width="400" />
+
 
 ##### No overdraws, no additional permissions.
 ##### No Sensor wasting (disabled during onPause). Super customizable. 
